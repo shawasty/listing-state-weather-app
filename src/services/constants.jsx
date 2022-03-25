@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect } from 'react'
 
 
-export const fetchData = async () => {
+export const fetchData = async (inputValue) => {
 
     const apikey = 'a79c801d992c39f043e1bc9cd00f15c8'
     const inputValue = '22306'
