@@ -4,7 +4,7 @@ const Input = () => {
     return (
         <div>
              {/* Search bar, input form with button */}
-             <input type="text" />
+                <input type="text" />
                 <button type="submit" >Submit</button>
         </div>
     );

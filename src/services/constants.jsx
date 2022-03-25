@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 
 export const fetchData = async () => {
 
-    const apikey = 'a9f78aa47042290376cc183ae433f088'
+    const apikey = 'a79c801d992c39f043e1bc9cd00f15c8'
     const inputValue = '22306'
     const base_url ='https://api.openweathermap.org/data/2.5/weather?zip='
 
