@@ -20,8 +20,8 @@ export const fetchData = async (inputValue) => {
         try {
         let response = await axios.get(`${base_url}${inputValue},us&units=imperial&appid=${apikey}`);
         const results= response.data.main
-        return results
         console.log(results);
+        return results
         } catch (error) {
         console.log(error);
         }

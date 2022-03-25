@@ -32,13 +32,16 @@ function App() {
     <div className="App">
 
       {/* <Input value={}/> */}
-      <div>
+      <div className="search"> 
              {/* Search bar, input form with button */}
+             <label htmlFor="zipcode">zipcode</label>
                 <input type="text" onChange={(e)=>setValue(e.target.value)
+                
                 }/>
                 <button type="submit" onClick={handleGetWeather}>Submit</button>
         </div>
-      {weatherData?<WeatherCard data={weatherData}/>: <p>loading</p>}
+      weatherData
+      <WeatherCard data={weatherData}/> 
     </div>
   );
 }
