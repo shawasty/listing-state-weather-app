@@ -4,10 +4,12 @@ import './App.css';
 import Input from "./components/Input";
 import WeatherCard from "./components/WeatherCard";
 
-function App() {
+function App(props) {
 // 
 //weatherData is where we store the response data from our api call.
   //value is where we keep track of what is being inserted into out input field.
+  const [weatherData, setWeatherData] = useState({});
+  const [value, setValue] = useState(" ");
 
   const handleGetWeather = ()=>{
     fetchData(value).then(res=>{
@@ -16,8 +18,7 @@ function App() {
       })
   }
 
- const [weatherData, setWeatherData] = useState({});
-  const [value, setValue] = useState(" ");
+ 
   //You will have to create functions that handle event changes
   //Also for submit changes as well
 
@@ -40,7 +41,8 @@ function App() {
                 }/>
                 <button type="submit" onClick={handleGetWeather}>Submit</button>
         </div>
-      weatherData
+        <h2>weather Data for: {value} zipcode </h2>
+      
       <WeatherCard data={weatherData}/> 
     </div>
   );
