@@ -4,8 +4,8 @@ import { useEffect } from 'react'
 
 export const fetchData = async (inputValue) => {
 
-    const apikey = 'a79c801d992c39f043e1bc9cd00f15c8'
-    const inputValue = '22306'
+    const apikey = 'd3835f377785b54db06ce82e27916c50'
+    // const inputValue = '22306'
     const base_url ='https://api.openweathermap.org/data/2.5/weather?zip='
 
     // axios.get(`${base_url}${inputValue},us&units=imperial&appid=${apikey}`)
