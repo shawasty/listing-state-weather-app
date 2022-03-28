@@ -9,7 +9,7 @@ function App(props) {
 //weatherData is where we store the response data from our api call.
   //value is where we keep track of what is being inserted into out input field.
   const [weatherData, setWeatherData] = useState({});
-  const [value, setValue] = useState(" ");
+  const [value, setValue] = useState(" " );
 
   const handleGetWeather = ()=>{
     fetchData(value).then(res=>{
@@ -24,10 +24,10 @@ function App(props) {
 
   // useEffect(()=> {
   //   setWeatherData({}) 
-  //   // fetchData(value).then(res=>{
-  //   //   setWeatherData(res) 
-  //   //   // console.log(weatherData)
-  //   // })
+  //   fetchData(value).then(res=>{
+  //     setWeatherData(res) 
+  //     // console.log(weatherData)
+  //   })
   // },[])
   return (
     <div className="App">
@@ -41,9 +41,12 @@ function App(props) {
                 }/>
                 <button type="submit" onClick={handleGetWeather}>Submit</button>
         </div>
+        <div className="desc">
         <h2>weather Data for: {value} zipcode </h2>
-      
+        </div>
+      <div className="weather">
       <WeatherCard data={weatherData}/> 
+      </div>
     </div>
   );
 }

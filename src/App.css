@@ -1,7 +1,12 @@
 .App {
   text-align: center;
+  background-image: url(../src/img/weatherback.jpeg);
+  background-size: cover ;
+  height: 100vh;
 }
 
 .search{
-  margin-top: 10%;
+  padding-top: 5%;
+
+  
 }
